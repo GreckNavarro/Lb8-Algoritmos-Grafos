@@ -37,8 +37,9 @@ public class PlayerControl : MonoBehaviour
     {
         vectorToMove = destiny;
         energy -= currentpeso;
-        Debug.Log(energy);
-        if(energy <= 0)
+        energy = Mathf.Clamp(energy, 0, 100);
+        Debug.Log("Energia: " + energy);
+        if (energy <= 0)
         {
             StartRestTime();
         }
