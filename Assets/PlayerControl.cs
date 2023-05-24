@@ -6,14 +6,21 @@ public class PlayerControl : MonoBehaviour
 {
     private Vector2 vectorToMove;
     [SerializeField] private int speed = 1;
-    [SerializeField] private float energy;
-    private float currentpeso;
     [SerializeField] private float reposo = 5f;
+
+    private float energy;
+    private float currentpeso;
+
     private bool reposando = false;
+
+    private SpriteRenderer sp;
+    private Color colorInicial;
 
     void Start()
     {
         energy = 100;
+        sp = GetComponent<SpriteRenderer>();
+        colorInicial = sp.color;
     }
     void Update()
     {
@@ -21,6 +28,10 @@ public class PlayerControl : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, vectorToMove, speed * Time.deltaTime);
         }
+    }
+    public void SetPeso(float peso)
+    {
+        currentpeso = peso;
     }
     public void ChangeMovePosition(Vector2 destiny)
     {
@@ -31,7 +42,7 @@ public class PlayerControl : MonoBehaviour
         {
             StartRestTime();
         }
-        
+
     }
     private void StartRestTime()
     {
@@ -44,13 +55,12 @@ public class PlayerControl : MonoBehaviour
     private  IEnumerator RestartCoroutine()
     {
         reposando = true;
+        sp.color = Color.red;
         yield return new WaitForSeconds(reposo);
         energy = 100;
         reposando = false;
+        sp.color = colorInicial;
     }
 
-    public void SetPeso(float peso)
-    {
-        currentpeso = peso;
-    }
+
 }

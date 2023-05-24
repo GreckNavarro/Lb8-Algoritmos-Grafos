@@ -6,15 +6,7 @@ public class NodeControl : MonoBehaviour
 {
     public List<NodeControl> listaNodeAdyacentes;
     public List<float> listapesos;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-      
-    }
+    
 
     public (NodeControl,float) SelectNextNode()
     {
@@ -27,9 +19,11 @@ public class NodeControl : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            NodeControl currentNode = SelectNextNode().Item1;
+            (NodeControl currentNode, float peso) = SelectNextNode();
+            collision.GetComponent<PlayerControl>().SetPeso(peso);
             collision.GetComponent<PlayerControl>().ChangeMovePosition(currentNode.transform.position);
-            collision.GetComponent<PlayerControl>().SetPeso(SelectNextNode().Item2);
+
+
         }
     }
 }

@@ -11,6 +11,7 @@ public class GrafoControl : MonoBehaviour
     private void Start()
     {
         player.ChangeMovePosition(currentNodeControl.gameObject.transform.position);
+        
     }
 
 
