@@ -434,11 +434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.data[0]
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.data[1]
@@ -446,12 +446,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listaNodeAdyacentes.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listaNodeAdyacentes.Array.data[0]
       value: 
-      objectReference: {fileID: 45157956}
+      objectReference: {fileID: 452433302}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listaNodeAdyacentes.Array.data[1]
       value: 
@@ -596,11 +596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.data[0]
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.data[1]
@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listaNodeAdyacentes.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listaNodeAdyacentes.Array.data[0]
@@ -758,7 +758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listapesos.Array.data[1]
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8244841894290666187, guid: e698471752431a9488a502d0b160fda2, type: 3}
       propertyPath: listaNodeAdyacentes.Array.size
